@@ -1,0 +1,7 @@
+{
+  "name": "WorkInterviewGalaPro",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

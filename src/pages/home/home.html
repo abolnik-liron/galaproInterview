@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      GalaPro Mobile Assignment
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <!-- From Start -->
+  <form (ngSubmit)="submitForm()">
+
+    <!-- URL Input -->
+    <ion-item>
+      <ion-label color="primary" stacked>Please fill your URL</ion-label>
+      <ion-input type="url" [(ngModel)]="RedirectUrl" name="RedirectUrl" placeholder="URL Input"></ion-input>
+    </ion-item>
+
+    <!-- URL redirect checkbox -->
+    <ion-item>
+      <ion-label>Redirect Checkbox</ion-label>
+      <ion-checkbox [(ngModel)]="isRedirectUrl" name="isRedirectUrl"></ion-checkbox>
+    </ion-item>
+    <ion-item *ngIf="errorMessage?.length > 0">
+        <ion-label class="error" >{{errorMessage}}</ion-label>
+    </ion-item>
+
+    <!-- Submit button -->
+    <button ion-button type="submit" block>Submit</button>
+
+  </form>
+</ion-content>
