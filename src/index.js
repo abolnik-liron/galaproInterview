@@ -3,8 +3,8 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const cors = require('cors');
 const mongoose = require("mongoose");
-const urlModel = require('./url.model');
-const defaultUrlModel = require('./defaultUrl.model');
+const urlModel = require('./models/url.model');
+const defaultUrlModel = require('./models/defaultUrl.model');
 const app = express();
 
 app.use(bodyParser.urlencoded({
